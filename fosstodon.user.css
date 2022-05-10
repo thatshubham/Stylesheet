@@ -741,8 +741,8 @@
 		width: fit-content;
 	}
 	.column-link {
-		font-size: fontSize*1.1;
-		font-weight: 600;
+		font-size: fontSize*0.9;
+		font-weight: 400;
 		padding: 8.5px 10px;
 		line-height: normal;
 		border-radius: br;
