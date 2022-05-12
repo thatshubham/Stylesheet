@@ -203,7 +203,6 @@
 	}
 	.icon-with-badge__badge {
 		background: iconBack;
-		margin: 2px;
 		font-family: font;
 		color: iconColor;
 		font-size: iconSize;
@@ -336,6 +335,7 @@
 		background-color: composeForm !important;
 		border-radius: br !important;
 		color: composeFormColor !important;
+
 	}
 	input:focus {
 		background-color: composeForm !important;
@@ -436,6 +436,8 @@
 	.compose-form__autosuggest-wrapper, .autosuggest-textarea__textarea, .compose-form__modifiers, .compose-form__buttons-wrapper, .compose-form__modifiers {
 		background-color: composeForm !important;
 		color: composeFormColor !important;
+				font-weight: 600;
+				font-size: fontSize !important;
 	}
 	.compose-form__modifiers > div:not(.compose-form__upload-wrapper) {
 		margin: 10px;
@@ -832,13 +834,21 @@
 		color: linkColor;
 	}
 	.poll__footer select option, .poll__footer select {
-		background-color: myBack;
-		color: fontColor;
-		font-size: fontSize;
-		line-height: 1.3125;
-		padding: 10px;
+		background-color: composeForm !important;
+		color: composeFormColor !important;
+		font-size: fontSize*0.8 !important;
 		font-weight: 400;
-		border: 1px solid borderColor;
+		padding: 0 !important;
+		border: 1px solid secondaryColor !important;
+		border-radius: br !important;
+	}
+	
+	.poll__footer button, .poll__footer [class="button button-secondary"] span {
+		background-color: composeForm !important;
+		color: composeFormColor !important;
+		font-size: fontSize*0.5 !important;
+		font-weight: 400;
+		padding: 5px !important;
 		border-radius: br !important;
 	}
 	.privacy-dropdown__option.active {
@@ -1036,4 +1046,18 @@
 	.icon-button {
 		color: secondaryColor;
 	}
+	[aria-label="Add content warning"] {
+		color: secondaryColor;
+	}
+	[class="poll__option editable"] div label input {
+		color: composeFormColor !important;
+	}
+	.poll__footer select option, .poll__footer select {
+	background-color: composeForm;
+	color: composeFormColor;
+	font-size: fontSize;
+	line-height: fontSize*1.2;
+	border: 1px solid borderColor;
+	border-radius: br !important;
+}
 }
