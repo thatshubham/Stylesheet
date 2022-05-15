@@ -32,10 +32,12 @@
 @var color iconBack "Notification Icon Background" black 
 @var color iconColor "Notification Icon Color" white 
 
+
 ==/UserStyle== */
 
 
 @-moz-document domain("fosstodon.org") {
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
 	:root {
 		--column-width: columnWidth;
 		--ui-highlight-color: headersColor !important;
@@ -1060,4 +1062,9 @@
 	border: 1px solid borderColor;
 	border-radius: br !important;
 }
+.status__action-bar {
+	justify-content: space-around !important;
+	max-width: var(--columnWidth);
+}
+
 }
